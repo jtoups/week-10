@@ -7,14 +7,37 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 540px;
     height: 100%;
     top: 0;
 }
 
+.leftbar {
+  position:absolute;
+  left: 0px;
+  width: 200px;
+  height: 100%;
+  background-color: #292c42;
+}
+
+.leftbutton {
+  width: 100%;
+  background-color: #292c42;
+  font-size: 20px;
+  color: white;
+  font-family: Calibri;
+  border-left: none;
+  border-right: none;
+  border-top: white;
+  border-width: .5px;
+  border-color: white;
+  text-align: left;
+
+
+}
 .sidebar {
     position: absolute;
-    left: 0px;
+    left: 200px;
     width: 340px;
     top: 0;
     bottom: 0;
@@ -83,4 +106,10 @@ Media Queries
     /*.item {
         background-color: red;
     }*/
+}
+
+/* Crazy Shit I'm Trying */
+
+.newDrop {
+  float: right;
 }

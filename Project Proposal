@@ -1,0 +1,37 @@
+PROBLEM/QUESTION
+Whenever I look for apartments in new cities, I always like to know if I'm close to a transit stop, specifically
+rail transit (subways, trolleys, etc, because I'm a nerd). However, when I use a real estate search site like Zillow,
+the maps they use make it really difficult to see if properties are close to a transit stop unless you zoom in
+to a scale where it becomes more difficult to see properties.
+
+I'd like to design something that can take pre-filtered Zillow data (if that's possible), and be able to filter
+it by a specified distance to a transit stop. The distance could be altered by a user. Also, i'd like it
+to dispaly the lines and where they collect in a very clear, diagramattic matter that's spatially accurate.
+Google Maps kind of does this now, but it's hard to read and in general not very good.
+
+THE DATA/Technologies Used
+
+Dataset's I'd need include:
+  SEPTA rail stops, shapefile converted into GeoJSON
+  SEPTA rail lines, shapfile converted into GeoJson
+  Zillow property data from pre - filtered results?
+    Like, I'd go onto Zillow, put in the requirements (size, price, amenities), and then have the user copy
+    the URL of said result into my program. That would have it use an AJAX call to pull all of the properties
+    from Zillow and plot them on the map using Leaflet.
+
+
+DESIGN SPEC
+  User Experience
+    Users should be able to copy and paste a Zillow URL, select SEPTA modes they'd like to filter by, and the max
+    distance between the property and the transit stop they'd be willing to go. Once the properties are filtered and plotted, have
+    a popup with the Zillow information and link show up.
+  Layouts and Visual Design
+    Maybe a sideback on the side with the input information, along with panes of properties. 
+
+ANTICIPATED DIFFICULTIES
+  Developing the method to pull from Zillow and pushing that data into a live array.
+MISSING PIECES
+  Is the Zillow part even possible?
+
+
+*** Part of me is considering doing this for a different city that I don't know, like Maybe Washington D.C. or Chicago.

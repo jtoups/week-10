@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <!-- Choose a frontend framework CSS file: -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- <link rel="stylesheet" href="css/material.css" /> -->
     <!-- <link rel="stylesheet" href="css/assembly.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Sidebar -->
+    <div class= "leftbar">
+        <button class="leftbutton">
+          <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+          Manufacturers </button>
+        <button class="leftbutton"> Purchases </button>
+        <button class="leftbutton"> Basket Secrets </button>
+    </div>
     <div class="sidebar">
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
-          <div class="topright-button" style="float: right">
-            [Add New]
+          <div class="dropdown newDrop">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                TEST
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#"> View History</a></li>
+              <li><a href="#">Email All Manufacturers</a></li>
+            </ul>
           </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
@@ -40,15 +54,7 @@
         <div>2558 Walnut Street<br>
         Philadelphia, PA 19107</div>
       </div>
-      <div class="item">
-        <h2 class="item-heading">Bask in the Glory</h2>
-        <div>2501 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Basket Ball</h2>
-        <div>2542 Walnut Street<br>
-        Philadelphia, PA 19107</div>
+
       </div>
       <div class="sort">
         Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
@@ -60,7 +66,7 @@
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>
     <!-- Choose a frontend framework Javascript file: -->
-    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <!-- <script src="js/material.js"></script> -->
     <!-- <script src="js/assembly.js"></script>  -->
     <script src="js/setup.js"></script>
